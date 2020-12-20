@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Quiz</title>
+        <link rel="icon" href="https://www.flaticon.com/svg/static/icons/svg/3400/3400058.svg">
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+    </head>
+
+    <body onload="init('start')">
+        <div id="page-container">
+            <div id="page-wrap">
+                <br><h1 class="center"><u>Computer Science Quiz!</u></h1>
+                
+                <div id="container">
+                    <input type="button" value="Start" title="Start the quiz" class="home-button" id="start" onclick="start(true)">
+                    <input type="button" value="Continue" title="Continue quiz where you left off" class="home-button" id="continue" onclick="start()">
+                </div>
+            </div>
+
+            <footer>
+                <img src="https://www.rossettschool.co.uk/images/footer-logo.png">
+                
+                <p>Leon Semmens<br><br>
+                © Copyright 2020, All rights reserved.</p>
+            </footer>
+        </div>
+    </body>
+</html>

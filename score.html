@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Quiz</title>
+        <link rel="icon" href="https://www.flaticon.com/svg/static/icons/svg/3400/3400058.svg">
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+    </head>
+
+    <body onload="init('score')">
+        <div id="page-container">
+            <div id="page-wrap">
+                <br><h1 class="center"><u>Computer Science Quiz!</u></h1><br>
+                <hr><br>
+                <h2 class="center" id="score" style="color:white;">Your final score: 0</h2>
+                <h3 class="center" id="highscore" style="color:white;">Your highscore: 0</h3>
+                <br>
+                <h1 class="center" id="congrats" style="color:rgb(2, 236, 2);display:none;">Congrats you beat your highscore!</h1>
+
+                <div id="container">
+                    <input type="button" value="Try again" title="Do the quiz again" class="home-button" id="retry" onclick="start(true)">
+                    <input type="button" value="Reset" title="Reset your scores and go to start menu" class="home-button" id="reset" onclick="reset()">
+                </div>
+            </div>
+
+            <footer>
+                <img src="https://www.rossettschool.co.uk/images/footer-logo.png">
+                
+                <p>Leon Semmens<br><br>
+                © Copyright 2020, All rights reserved.</p>
+            </footer>
+        </div>
+    </body>
+</html>

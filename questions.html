@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Quiz</title>
+        <link rel="icon" href="https://www.flaticon.com/svg/static/icons/svg/3400/3400058.svg">
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+    </head>
+
+    <body onload="init('questions')">
+        <div id="page-container">
+            <div id="page-wrap">
+                <h1 class="center"><u>Computer Science Quiz!</u></h1>
+
+                <div id="questionbar">
+                    <h2 class="center-v" id="questionnum">Loading...</h2>
+                </div>
+
+                <div id="container">
+                    <div class="interact-area">
+                        <img src="https://www.flaticon.com/svg/static/icons/svg/1828/1828934.svg" width=50px height=50px>
+                        <h2 id="question">Loading...</h2>
+                        <p class="center">Answer the question carefully!</p><br><br>
+                        <h2 id="validation"></h2><br>
+                        <input type="button" value="Next" id="next" onclick="nextQuestion()">
+                    </div>
+
+                    <div class="interact-area">
+                        <div class="answer">
+                            <div class="answer-n-div">
+                                <h2>1</h2>
+                            </div>
+                            <div class="answer-div">
+                                <input type="button" value="Loading..." id="answer1" onclick="answer(1)">
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <div class="answer-n-div">
+                                <h2>2</h2>
+                            </div>
+                            <div class="answer-div">
+                                <input type="button" value="Loading..." id="answer2" onclick="answer(2)">
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <div class="answer-n-div">
+                                <h2>3</h2>
+                            </div>
+                            <div class="answer-div">
+                                <input type="button" value="Loading..." id="answer3" onclick="answer(3)">
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <div class="answer-n-div">
+                                <h2>4</h2>
+                            </div>
+                            <div class="answer-div">
+                                <input type="button" value="Loading..." id="answer4" onclick="answer(4)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <img src="https://www.rossettschool.co.uk/images/footer-logo.png">
+                
+                <p>Leon Semmens<br><br>
+                © Copyright 2020, All rights reserved.</p>
+            </footer>
+        </div>
+    </body>
+</html>
